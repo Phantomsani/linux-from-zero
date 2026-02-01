@@ -1,4 +1,4 @@
-# 🐧 Linux From Zero — Day 1 Journey (Ubuntu + Termux Style Setup)
+# 🐧 Linux From Zero — Day 1 Journey 
 
 > A complete beginner’s first-day journey into **real Linux**  
 > From **zero experience** → **working Ubuntu environment**  
