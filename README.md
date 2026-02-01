@@ -108,19 +108,24 @@ Ubuntu 24.04 blocks global pip installs (PEP 668).
 The correct approach is virtual environments.
 
 🔹 Create Python Virtual Environment
+```
 python3 -m venv ~/pyenv
-
+```
 🔹 Activate Environment
+```
 source ~/pyenv/bin/activate
-
-🔹 Install Python Packages (Termux Equivalent)
+```
+🔹 Install Python Packages 
+```
 pip install requests beautifulsoup4 mechanize rich future
-
+```
 🔹 Deactivate
+```
 deactivate
-
+```
 🧪 Tool Verification (Manual)
 Check system tools
+```
 git --version
 curl --version
 wget --version
@@ -131,17 +136,20 @@ ruby -v
 ssh -V
 figlet -v
 toilet -v
-
+```
 Check paths
+```
 which git
 which python3
 which pip3
-
+```
 🧪 Health-Check Script (Automation)
 📄 Create script
+```
 nano health-check.sh
 ```
 📌 Script content
+```
 #!/bin/bash
 
 echo "===== SYSTEM TOOLS CHECK ====="
@@ -172,24 +180,10 @@ else
 fi
 ```
 ▶️ Run it
+```
 chmod +x health-check.sh
 ./health-check.sh
-
-----
-
-🧠 Key Concepts Learned (Day 1)
-
-Termux ≠ real Linux
-
-Why sudo pip is dangerous
-
-Why Ubuntu protects system Python
-
-What PATH is and why it matters
-
-How professionals verify installations
-
-How to debug errors calmly
+```
 
 🚀 Current Status
 
